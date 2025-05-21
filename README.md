@@ -115,8 +115,8 @@
 - 결측치 처리: 평균값 보간 또는 삭제  
 - 결과: `67개 지역 × 19개 변수` 병합 테이블 (`파일병합_최종.ipynb`)
 
-
 ### 3.b. EDA
+
 
 ## 4. ML
 ### 4.a. ML preprocessing
@@ -140,12 +140,39 @@
    - 사용 연도: 2019 ~ 2023  
    - 처리 방식: 연도별 데이터 통합
 
-#### Preprocessing file
-`머신러닝 데이터.ipynb`
+### 4.b. ML modeling
+- 사용 모델: 다중 선형 회귀 (Linear Regression)  
+- 데이터 구성: 4개년 불면증 진료 데이터
+- 설명 변수: 배달 빈도, 총 신고수  
+- 타겟 변수: 불면증 진료 인원  
+- 전처리: Min-Max Scaling 적용  
+- 검증 방식: train/test split (test size=0.2, 무작위 분할)  
 
+#### Modeling process
+- feature, target 분리  
+- 정규화(MinMaxScaler) 수행  
+- 학습/검증 세트 분리  
+- LinearRegression 모델 학습 및 예측  
+- 예측 성능 평가
 
+#### Evaluation metrics
+- R² score  
+- Mean Squared Error (MSE)  
+- Root Mean Squared Error (RMSE)  
+- Mean Absolute Error (MAE)
 
-### 4.b. ML model
+#### Output
+- 모델 성능 비교 시각화 (bar plot)  
+- 예측 결과 출력  
+- 잔차 시각화
+
 ## 5. insight
+- 불면증 진료인원은 지역 간 차이가 뚜렷하게 나타남  
+- 배달 빈도가 높은 지역일수록 불면증 환자 수가 증가하는 경향 확인  
+- 112 신고가 많은 지역 또한 불면증 진료인원이 높은 패턴 확인  
+- 두 변수 모두 수면 환경의 외부적 요인(생활 패턴, 소음 등)과 연관성 시사  
+- 단순 선형 회귀 기반 모델에서도 일정 수준의 설명력 확보
+
+※ 공시지가, 유흥시설 등 다른 변수들과의 관계는 향후 데이터 확보 시 추가 분석 가능
 
 
