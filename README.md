@@ -31,8 +31,8 @@
 | 교통량 | 서울시 교통량 정보   | [바로가기](http://data.seoul.go.kr/dataList/OA-15064/F/1/datasetView.do)   | 2020 서울특별시 교통량 조사자료 | 서울특별시  |
 | 유흥시설 | 유흥주점영업 인허가 정보 | [바로가기](https://www.data.go.kr/data/15045018/fileData.do), [바로가기](http://data.seoul.go.kr/dataList/OA-16090/S/1/datasetView.do)   | 행안부\_유흥업소\_20240302, 서울시\_유흥업소\_20200715 | 행정안전부, 서울특별시 |
 | 공시지가 | 국토교통부\_표준지공시지가  | [바로가기](https://www.data.go.kr/data/15004246/fileData.do) | 국토교통부\_표준지공시지가\_20240101  | 국토교통부|
+
 ### 2-c data source(for ML)
-### 4-a. data source (for ML)
 
 | Variable   | Raw Dataset                      | link | file name                                             | provider                         |
 |------------|----------------------------------|------|------------------------------------------------------|----------------------------------|
