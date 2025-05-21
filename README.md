@@ -22,7 +22,7 @@
 | **공시지가**   | 시군구별 평균 공시지가 (원/㎡)                  | 공시지가가 높은 지역일수록 수면장애 발생률이 낮을 것이다.        |
 
 ### 2-b. data source
-file : `Data_Soure.me`
+file : `Data_Soure.md`
 
 ## 3. Data Analysis
 ### 3-a. preprocessing
